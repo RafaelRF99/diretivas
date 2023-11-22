@@ -1,0 +1,30 @@
+<div class="alt">
+  <div>
+    <div class="card" *ngIf="true">
+      <div class="name">
+        Usuario:
+        <p>Rafael Ferreira</p>
+      </div>
+      <div>Idade: <strong>25</strong></div>
+    </div>
+    <!-- Abaixo estão ocultos - false -->
+    <div class="card" *ngIf="false">
+      <div class="name">
+        Usuario:
+        <p>Rafael Ferreira</p>
+      </div>
+      <div>Idade: <strong>25</strong></div>
+    </div>
+    <div class="card" *ngIf="disable">
+      <div class="name">
+        Usuario:
+        <p>Rafael Ferreira</p>
+      </div>
+      <div>Idade: <strong>25</strong></div>
+    </div>
+  </div>
+  <p *ngIf="false; else anthoerBlock">Ativar</p>
+  <ng-template #anthoerBlock>
+    <p>Sou um bloco secreto</p>
+  </ng-template>
+</div>

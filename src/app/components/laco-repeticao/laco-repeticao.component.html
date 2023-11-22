@@ -1,0 +1,7 @@
+<div class="alt">
+  <h2>Lista Repetição:</h2>
+  <p *ngFor="let list of lists; let i = index">
+    {{ i }} - {{ list }}
+    <button (click)="delete(list, i)">Deletar</button>
+  </p>
+</div>

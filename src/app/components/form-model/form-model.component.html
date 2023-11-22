@@ -1,0 +1,9 @@
+<div class="alt">
+  <input type="text" [(ngModel)]="item" name="item" />
+  <button (click)="send()">Salvar</button>
+  <p>{{ item }}</p>
+  <p>Lista</p>
+  <ul>
+    <li *ngFor="let list of lists">{{ list }}</li>
+  </ul>
+</div>
